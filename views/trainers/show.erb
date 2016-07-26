@@ -1,0 +1,16 @@
+<div class = "pokemon">
+  <h2><a href='/trainers/<%= @trainer.id %>'><%= @trainer.name %></a></h2>
+  <img src='<%= @trainer.img_url %>'></img>
+  <h3>Level: <%= @trainer.level %></h3>
+</div>
+<h2><%= @trainer.name %>'s Pokemon:</h2>
+<% @pokemons.each do |pokemon| %>
+  <div class = "pokemon">
+    <h2><a href='/pokemons/<%= pokemon.id %>'><%= pokemon.name %></a></h2>
+    <img src='<%= pokemon.img_url %>'></img>
+    <h3>Type: <%= pokemon.poke_type %></h3>
+    <h3>CP: <%= pokemon.cp %></h3>
+  </div>
+<% end %>
+
+<h3><a href="/trainers/<%= @trainer.id %>/edit">Edit this Trainer</a></h3>

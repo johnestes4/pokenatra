@@ -1,0 +1,11 @@
+<% @pokemons.each do |pokemon| %>
+  <div class = "pokemon">
+    <h2><a href='/pokemons/<%= pokemon.id %>'><%= pokemon.name %></a></h2>
+    <img src='<%= pokemon.img_url %>'></img>
+    <h3>Type: <%= pokemon.poke_type %></h3>
+    <h3>CP: <%= pokemon.cp %></h3>
+  </div>
+<% end %>
+<footer>
+  <h3><a href='/pokemons/new'>Create New Pokemon</a></h3>
+</footer>
