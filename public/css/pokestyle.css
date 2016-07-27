@@ -7,6 +7,10 @@ Uncomment for sick pokestyle
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
+div img {
+  max-width: 90%;
+}
+
 a, p, h2, h3 {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;

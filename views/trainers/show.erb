@@ -1,9 +1,10 @@
 <div class = "pokemon">
   <h2><a href='/trainers/<%= @trainer.id %>'><%= @trainer.name %></a></h2>
+  <h3><%= @team.name %></h3>
   <img src='<%= @trainer.img_url %>'></img>
   <h3>Level: <%= @trainer.level %></h3>
 </div>
-<h2><%= @trainer.name %>'s Pokemon:</h2>
+<h2><%= @trainer.name %>'s Pokémon:</h2>
 <% @pokemons.each do |pokemon| %>
   <div class = "pokemon">
     <h2><a href='/pokemons/<%= pokemon.id %>'><%= pokemon.name %></a></h2>

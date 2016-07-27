@@ -10,12 +10,12 @@
     <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
     <label>CP:</label>
     <input type="text" name="pokemon[cp]" value="<%= @pokemon.cp %>">
-    <input type="submit" value="Update Pokemon">
+    <input type="submit" value="Update Pokémon">
   </form>
 
-  <h2>Delete Pokemon</h2>
+  <h2>Delete Pokémon</h2>
   <form action="/pokemons/<%= @pokemon.id %>" method="post">
     <input type="hidden" name="_method" value="delete">
-    <input type="submit" value="DESTROY POKEMON">
+    <input type="submit" value="Destroy Pokémon">
   </form>
 </div>
